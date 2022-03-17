@@ -4,7 +4,7 @@ var app= angular.module("index-template");
 
         var codigo=$routeParams.codigo;
         $scope.alumno={};
-        $http.get("https://localhost:44367/api/Alumno/Busca?idalumno="+codigo)
+        $http.get("https://webapiconsult.azurewebsites.net/Api/Alumno/Busca?idalumno="+codigo)
             .then(function(data){
                 
                 $scope.alumno=data.data;

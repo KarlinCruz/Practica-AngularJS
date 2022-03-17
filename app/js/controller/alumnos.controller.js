@@ -5,7 +5,7 @@ var app= angular.module("index-template");
         $scope.heroes=[];
         $scope.pagina=15;
 
-        $http.get("https://localhost:44367/api/Alumno")
+        $http.get("https://webapiconsult.azurewebsites.net/Api/Alumno")
             .then(function(data){
                 
                 $scope.heroes=data.data;
